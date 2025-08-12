@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(images.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.todo-container {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px red;
+    max-width: 400px;
+    width: 100%;
+    margin: 20px auto;
+}
+
+#task-input {
+    height: 25px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+
+#add-task-btn {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 40px;
+}
+
+#add-task-btn:hover {
+    background-color: orangered;
+}
+
+#tasks {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    width: 100%; 
+}
+.task {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.task-done {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.remove-task {
+    float: right;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.remove-task:hover {
+    background-color: #bd2130;
+}
+
+.h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: red;
+    display: flex;
+    justify-content: center;
+}
+
+#task-input{
+    border-radius: 5px;
+    width: 230px;
+    margin-top: 50px;
+}
+
+
+@media (max-width: 768px) {
+    .todo-container {
+        padding: 15px;
+    }
+    #task-input {
+        width: 65%;
+    }
+    #add-task-btn {
+        width: 30%;
+    }
+}
+
+@media (max-width: 480px) {
+    .todo-container {
+        padding: 10px;
+    }
+    #task-input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    #add-task-btn {
+        width: 100%;
+    }
+    .task {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .remove-task {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 320px) {
+    .todo-container {
+        padding: 5px;
+    }
+}
+
+li {
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:orange;
+    margin-left: 10px;
+}
+
+.footer{
+    color: orangered;
+    font-style: oblique;
+    font-size: large;
+    margin-top: 550px;
+    display: flex;
+    justify-content: center;
+}
