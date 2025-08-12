@@ -142,5 +142,6 @@ li {
     font-size: large;
     margin-top: 550px;
     display: flex;
+    margin-right: 20PX;
     justify-content: center;
 }
